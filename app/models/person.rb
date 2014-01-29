@@ -8,8 +8,6 @@ class Person < ActiveRecord::Base
   validates :organization, presence: true
 
   def add_role!(role)
-    #return false if role.organization != organization
     self.roles << role
-    #true
   end
 end
